@@ -1,0 +1,155 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(Acme/Acme-Regular.ttf);
+}
+
+* {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+
+  /*
+      Introduced in Internet Explorer 10.
+      See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+    */
+  -ms-user-select: none;
+  user-select: none;
+}
+
+html {
+  font-family: myFirstFont;
+}
+
+body {
+  background: linear-gradient(#0cebeb, #20e3b2, #29ffc6);
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.42);
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+header h1 {
+  text-align: center;
+  color: white;
+}
+
+.logo {
+  height: 42px;
+  width: 42px;
+}
+
+.menu {
+  display: flex;
+  color: white;
+  padding-left: 30px;
+}
+
+.menu .menu__item {
+  font-weight: bold;
+  padding: 15px;
+  border-right: white solid 3px;
+}
+
+.menu .menu__item a {
+  color: white;
+}
+
+.menu .menu__item:last-child {
+  border: none;
+}
+
+.home {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 75px;
+}
+
+.home .left_image {
+  display: flex;
+  justify-content: center;
+}
+
+.home .left_image img {
+  max-height: 600px;
+}
+
+.home h1 {
+  font-size: 5rem;
+}
+
+.content {
+  padding-top: 30px;
+}
+
+.content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 70px;
+}
+
+.content .container {
+  padding: 0 200px;
+}
+
+.content .location {
+  display: flex;
+  padding: 50px 0;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content .location i {
+  margin-right: 15px;
+}
+
+.content .location h3 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.music {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 15px 35px;
+  margin: 20px 0 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 130px;
+}
+
+.load_more {
+  padding: 30px;
+  margin-top: 50px;
+  margin-bottom: 75px;
+  background: rgba(255, 255, 255, 0.7);
+  font-size: 1.5rem;
+  border-radius: 130px;
+  width: 100%;
+  text-align: center;
+  border: 2px solid black;
+}
+
+.load_more:hover {
+  background: rgba(187, 187, 187, 0.7);
+}
+
+.load_more:active {
+  background: rgba(201, 201, 201, 0.7);
+}
+
+footer {
+  padding: 2px; /* Поля вокруг текста */
+  background: #000000; /* Цвет фона */
+  color: #fff; /* Цвет текста */
+  padding: 30px 45px;
+  display: flex;
+  justify-content: space-between;
+}
